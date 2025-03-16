@@ -46,13 +46,13 @@ public class NumFormatter {
 
                 toNum += String.valueOf(s.charAt(i));
 
-                if (toNum.endsWith("0")) {
-                    toNum = toNum.substring(0, toNum.length()-1);
-                }
-
             }
         } else {
             toNum = String.valueOf(num);
+        }
+
+        while (toNum.endsWith("0")) {
+            toNum = toNum.substring(0, toNum.length()-1);
         }
 
         if (toNum.endsWith(".")) {
