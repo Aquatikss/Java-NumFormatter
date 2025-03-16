@@ -14,8 +14,10 @@ Lightweight and efficient
 public class Main {
     public static void main(String[] args) {
         System.out.println(NumFormatter.format(1000));       // Output: 1K
-        System.out.println(NumFormatter.format(1500000));    // Output: 1.5M
-        System.out.println(NumFormatter.format(2000000000)); // Output: 2B
+        System.out.println(NumFormatter.format(10000));      // Output: 10K
+        System.out.println(NumFormatter.format(100000));     // Output: 100K
+        System.out.println(NumFormatter.format(1050));       // Output: 1.05K
+        System.out.println(NumFormatter.format(10100));      // Output: 10.1K
     }
 }
 ```
