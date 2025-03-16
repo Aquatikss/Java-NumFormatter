@@ -20,12 +20,6 @@ public class Main {
 }
 ```
 
-Customization
-
-You can specify decimal precision and suffix formatting options to meet your needs. Example:
-
-System.out.println(NumFormatter.format(1234567, 2)); // Output: 1.23M
-
 # Contributing
 
 Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
