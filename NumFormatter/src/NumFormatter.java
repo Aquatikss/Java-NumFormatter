@@ -52,7 +52,9 @@ public class NumFormatter {
         }
 
         while (toNum.endsWith("0")) {
-            toNum = toNum.substring(0, toNum.length()-1);
+            if (displacement != 0) {
+                toNum = toNum.substring(0, toNum.length()-1);
+            }
         }
 
         if (toNum.endsWith(".")) {
